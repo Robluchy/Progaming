@@ -4,10 +4,11 @@ package trenes;
 /**
  * The Class TrenVala.
  */
-public class TrenVala extends Tren {
+public class TrenVala extends Tren implements ReproductorPelicula, Termostato {
 
 	/** The velocidad promedio. */
 	private int velocidadPromedio;
+	private double tamaño;
 	
 
 
@@ -17,6 +18,7 @@ public class TrenVala extends Tren {
 	 */
 	public TrenVala() {
 		velocidadPromedio=0;
+		tamaño=0;
 	}
 
 	/**
@@ -26,9 +28,10 @@ public class TrenVala extends Tren {
 	 * @param numeroVagones the numero vagones
 	 * @param velocidadPromedio the velocidad promedio
 	 */
-	public TrenVala(double carga_vagon, int numeroVagones, int velocidadPromedio) {
+	public TrenVala(double carga_vagon, int numeroVagones, int velocidadPromedio, int tamaño) {
 		super(carga_vagon, numeroVagones);
 		this.velocidadPromedio = velocidadPromedio;
+		this.tamaño = tamaño;
 	}
 
 	/**
@@ -39,6 +42,7 @@ public class TrenVala extends Tren {
 	public TrenVala(TrenVala copia) {
 		super((Tren) copia);
 		this.velocidadPromedio = copia.velocidadPromedio;
+		this.tamaño= copia.tamaño;
 		
 	}
 	
@@ -146,6 +150,30 @@ public class TrenVala extends Tren {
 	 */
 	public void setVelocidadPromedio(int velocidadPromedio) {
 		this.velocidadPromedio = velocidadPromedio;
+	}
+
+	@Override
+	public int aumentarTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int disminuirTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int regularTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void reproducirPelicula() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

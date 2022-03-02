@@ -4,20 +4,20 @@ package trenes;
 /**
  * The Class TrenCarga.
  */
-public class TrenCarga extends Tren{
+public class TrenCarga extends Tren implements ReproductorPelicula, Termostato {
 
 	/** The metodo carga. */
 	private String metodoCarga ;
 	
 	/**
-	 * Instantiates a new tren carga.
+	 * Instacia el trenCarga. con el constructor por defecto
 	 */
 	public TrenCarga() {
 		metodoCarga= "";
 	}
 
 	/**
-	 * Instantiates a new tren carga.
+	 * Instantiates a new tren carga. con el constructor parametrizado
 	 *
 	 * @param carga_vagon the carga vagon
 	 * @param numeroVagones the numero vagones
@@ -29,7 +29,7 @@ public class TrenCarga extends Tren{
 	}
 
 	/**
-	 * Instantiates a new tren carga.
+	 * Instantiates a new tren carga. con el constructor de copia
 	 *
 	 * @param copia the copia
 	 */
@@ -107,7 +107,46 @@ public class TrenCarga extends Tren{
 	public void setMetodoCarga(String metodoCarga) {
 		this.metodoCarga = metodoCarga;
 	}
-	
-	
+
+	@Override
+	public int aumentarTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	@Override
+	public int regularTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void elegirPelicula(String pelicula) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reproducirPelicula() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void pausarPelicula() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int disminuirTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
 
 }

@@ -1,12 +1,12 @@
 package trenes;
 
-// TODO: Auto-generated Javadoc
+
 /**
  * The Class Tren.
  */
 public abstract class Tren {
 
-	/** The carga vagon. */
+	/** The del carga vagon. */
 	private double carga_vagon;
 	
 	/** The numero vagones. */
@@ -77,7 +77,7 @@ public abstract class Tren {
 
 
 	/**
-	 * Gets the carga vagon.
+	 * recoge la carga vagon.
 	 *
 	 * @return the carga vagon
 	 */
@@ -87,7 +87,7 @@ public abstract class Tren {
 
 
 	/**
-	 * Sets the carga vagon.
+	 * Añade el carga vagon.
 	 *
 	 * @param carga_vagon the new carga vagon
 	 */
@@ -97,7 +97,7 @@ public abstract class Tren {
 
 
 	/**
-	 * Gets the numero vagones.
+	 * recoge el numero vagones.
 	 *
 	 * @return the numero vagones
 	 */
@@ -107,7 +107,7 @@ public abstract class Tren {
 
 
 	/**
-	 * Sets the numero vagones.
+	 * Añade el numero de vagones.
 	 *
 	 * @param numeroVagones the new numero vagones
 	 */
