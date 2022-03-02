@@ -1,16 +1,23 @@
 package trenes;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Tren.
+ */
 public abstract class Tren {
 
+	/** The carga vagon. */
 	private double carga_vagon;
+	
+	/** The numero vagones. */
 	private int numeroVagones;
+	
+	/** The Contadortrenes. */
 	private static int Contadortrenes;
 	
 	
 	/**
-	 * Constructor por defecto
-	 * @param carga_vagon
-	 * @param numeroVagones
+	 * Constructor por defecto.
 	 */
 	public Tren() {
 	
@@ -21,9 +28,10 @@ public abstract class Tren {
 
 
 	/**
-	 * Constructor parametrizado
-	 * @param carga_vagon
-	 * @param numeroVagones
+	 * Constructor parametrizado.
+	 *
+	 * @param carga_vagon the carga vagon
+	 * @param numeroVagones the numero vagones
 	 */
 	public Tren(double carga_vagon, int numeroVagones) {
 		super();
@@ -34,9 +42,9 @@ public abstract class Tren {
 
 
 	/**
-	 * constructor copia
-	 * @param carga_vagon
-	 * @param numeroVagones
+	 * constructor copia.
+	 *
+	 * @param copia the copia
 	 */
 	public Tren(Tren copia) {
 		this.carga_vagon = copia.carga_vagon;
@@ -45,33 +53,64 @@ public abstract class Tren {
 	}
 
 	
+	/**
+	 * Cargar vagones.
+	 */
 	public abstract void cargarVagones ();
 		
+	/**
+	 * Poner en marcha.
+	 */
 	public abstract void ponerEnMarcha ();
 	
 	
 
+	/**
+	 * To string.
+	 *
+	 * @return the string
+	 */
 	@Override
 	public String toString() {
 		return "tren [carga del vagon=" + carga_vagon + ", numero de Vagones=" + numeroVagones + "]";
 	}
 
 
+	/**
+	 * Gets the carga vagon.
+	 *
+	 * @return the carga vagon
+	 */
 	public double getCarga_vagon() {
 		return carga_vagon;
 	}
 
 
+	/**
+	 * Sets the carga vagon.
+	 *
+	 * @param carga_vagon the new carga vagon
+	 */
 	public void setCarga_vagon(double carga_vagon) {
 		this.carga_vagon = carga_vagon;
 	}
 
 
+	/**
+	 * Gets the numero vagones.
+	 *
+	 * @return the numero vagones
+	 */
 	public int getNumeroVagones() {
 		return numeroVagones;
 	}
 
 
+	/**
+	 * Sets the numero vagones.
+	 *
+	 * @param numeroVagones the new numero vagones
+	 */
 	public void setNumeroVagones(int numeroVagones) {
 		this.numeroVagones = numeroVagones;
 	}

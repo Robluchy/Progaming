@@ -1,7 +1,17 @@
 package trenes;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Principal.
+ */
 public class Principal {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 
 		TrenVala ave = new TrenVala(12, 10, 9000);
