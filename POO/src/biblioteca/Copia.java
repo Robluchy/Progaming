@@ -3,7 +3,6 @@ package biblioteca;
 import java.util.ArrayList;
 import java.util.Date;
 
-import navesita.Nave;
 
 public class Copia {
 
